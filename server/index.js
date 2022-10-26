@@ -26,12 +26,6 @@ app.use(cors());
 app.use(express.json());
 
 // Connecting to the database
-mongoose
-  .connect(
-    "mongodb+srv://maproxa:mauriciorosa25@maproxa.i5mzq.mongodb.net/TestMERN?retryWrites=true&w=majority"
-  )
-  .then(() => console.log("Database Connected"))
-  .catch((e) => console.log(e));
 
 ////routes
 app.get("/hello", (req, res) => {
